@@ -57,7 +57,7 @@ public class BuyerAgent extends Agent {
 	@Override
 	protected void takeDown() {
 		System.out.println(" Comprador [ " + getLocalName()+  "] abandonando el mercado.");
-		System.out.println("----------------------------------------");
+		System.out.println("---------------------------------------");
 
 	}
 	
