@@ -1,0 +1,9 @@
+-Dfile.encoding=UTF-8
+-Dstdout.encoding=UTF-8
+-Dstderr.encoding=UTF-8
+-classpath
+"C:\\Users\\prestamo\\eclipse-workspace\\MarketplaceJADE\\bin;C:\\Users\\prestamo\\Desktop\\SISTEMAS INTELIGENTES\\JADE-bin-4.6.0\\jade\\lib\\jade.jar"
+-XX:+ShowCodeDetailsInExceptionMessages
+jade.Boot
+-gui
+vendedor1:marketplace.agents.SellerAgent
