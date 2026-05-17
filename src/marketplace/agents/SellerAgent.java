@@ -78,4 +78,6 @@ public class SellerAgent extends Agent {
 		}
 		System.out.println("Vendedor [" + getAID().getName() + "] terminado.");
 	}
+
 }
+
