@@ -46,17 +46,12 @@ Para que se pueda ver una negociación exitosa, se introduce en la caja de texto
 * peras
 * También funciona con otras opciones que están en el código.
  
-El sistema buscará ofertas, comparará precios a través del broker y devolverá el resultado por pantalla con pausas
-simulando tiempo real de red. Únicamente existe un único BrokerAgent, aunque podrían existir más pero al tratarse de un
-mercado sencillo hemos decidido poner solo uno; BuyerAgent pueden existir más en JADE pero no en la interfaz que hemos realizado;
-SellerAgent puede haber muchos más (dependerá de lo que pongamos en Arguments, lo explicado en el apartado anterior)
-y el InterfazAgent solo uno.
+El sistema buscará ofertas, comparará precios a través del broker y devolverá el resultado por pantalla con pausas simulando tiempo real de red. 
 
 ## Detalles sobre nuestra práctica
 * Únicamente existe un único BrokerAgent, aunque podrían existir más pero al tratarse de un
 mercado sencillo hemos decidido poner solo uno; BuyerAgent pueden existir más en JADE pero no en la interfaz que hemos realizado;
-SellerAgent puede haber muchos más (dependerá de lo que pongamos en Arguments, lo explicado en el apartado anterior)
-y el InterfazAgent solo uno.
+SellerAgent puede haber muchos más (dependerá de lo que pongamos en Arguments) y el InterfazAgent solo uno.
 * Puede ser que varios vendedores dispongan de un producto al mismo precio, en ese caso se usa el concepto de
 'First-Come, First-Served', es decir, si el vendedor1 vende peras a 3€ y el vendedor 4 igual, el producto lo venderá el vendedor 1
 al estar primero por la condición que pusimos de if(precio< mejorPrecio).
@@ -67,10 +62,8 @@ al estar primero por la condición que pusimos de if(precio< mejorPrecio).
 ## Declaración de uso de IA
 Tal y como se pide en el enunciado de la práctica, declaramos que se ha utilizado asistencia de IA generativa durante el desarrollo 
 de la práctica para ciertas dudas:
-* **Solucionado de conflictos en Git**: para solucionar errores que nos aparecían del tipo 'non-fast-forward' y 'Merge Conficts' cuando
-* integrabamos nuestro trabajo.
-* **Mejoras** : generación de pausas para que se simulase como si fuese algo más realista, ya que al principio cuando probábamos la interfaz
-* gráfica, aparecía todo al instante y no era tan realista (doWait())
+* **Solucionado de conflictos en Git**: para solucionar errores que nos aparecían del tipo 'non-fast-forward' y 'Merge Conficts' cuando integrabamos nuestro trabajo.
+* **Mejoras** : generación de pausas para que se simulase como si fuese algo más realista, ya que al principio cuando probábamos la interfaz gráfica, aparecía todo al instante y no era tan realista (doWait())
 * **Conflictos del buildpath**: ayuda a corrgir problemas de configuración del 'Build Path' relacionados con el 'jade.jar'
-Hemos usado la IA exclusivamente como herramienta de apoyo, solución de conflictos y consulta técnica; el resto ha sido realizado por nsosotros
+Hemos usado la IA exclusivamente como herramienta de apoyo, solución de conflictos y consulta técnica; el resto ha sido realizado por nosotros
 mismos.
