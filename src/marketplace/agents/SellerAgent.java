@@ -20,6 +20,11 @@ public class SellerAgent extends Agent {
 		catalogo = new Hashtable<>();
 		catalogo.put("manzanas", (int) (Math.random() * 10) + 1);
 		catalogo.put("peras", (int) (Math.random() * 10) + 1);
+		catalogo.put("arroz", (int) (Math.random() * 10) + 1);
+		catalogo.put("chocolate", (int) (Math.random() * 10) + 1);
+		catalogo.put("azucar", (int) (Math.random() * 10) + 1);
+		catalogo.put("mermelada", (int) (Math.random() * 10) + 1);
+		catalogo.put("fresas", (int) (Math.random() * 10) + 1);
 		
 		DFAgentDescription dfd = new DFAgentDescription();
 		dfd.setName(getAID()); 
@@ -52,6 +57,7 @@ public class SellerAgent extends Agent {
 				ACLMessage reply = msg.createReply();
 				
 				Integer precio = catalogo.get(producto.toLowerCase());
+				myAgent.doWait(1000);
 				if (precio != null) {
 					reply.setPerformative(ACLMessage.PROPOSE);
 					reply.setContent(String.valueOf(precio));
