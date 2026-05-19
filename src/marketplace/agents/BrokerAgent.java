@@ -280,4 +280,4 @@ public class BrokerAgent extends Agent {
 		System.out.println("Broker [" + getLocalName() + "] terminado.");
 	}
 }
-//prueba
+

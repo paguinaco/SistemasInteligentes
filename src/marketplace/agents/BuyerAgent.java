@@ -97,7 +97,7 @@ public class BuyerAgent extends Agent {
 			if (respuesta != null) {
 				if (respuesta.getPerformative() == ACLMessage.PROPOSE) {
 					int precio = Integer.parseInt(respuesta.getContent());
-					enviarMensajeInterfaz("✅ El Broker ha conseguido la mejor oferta por " + precio + "€");
+					enviarMensajeInterfaz("El Broker ha conseguido la mejor oferta por " + precio + "€");
 					
 					// Confirmamos la compra al broker (ACCEPT_PROPOSAL)
 					ACLMessage aceptacion = new ACLMessage(ACLMessage.ACCEPT_PROPOSAL);
@@ -107,10 +107,10 @@ public class BuyerAgent extends Agent {
 					aceptacion.setInReplyTo(respuesta.getReplyWith());
 					myAgent.send(aceptacion);
 					
-					enviarMensajeInterfaz("🎉 ¡Compra confirmada con éxito!");
+					enviarMensajeInterfaz("¡Compra confirmada con éxito!");
 					
 				} else if (respuesta.getPerformative() == ACLMessage.REFUSE) {
-					enviarMensajeInterfaz("❌ El Broker informa: Ningún vendedor tiene este producto.");
+					enviarMensajeInterfaz("El Broker informa: Ningún vendedor tiene este producto.");
 				}
 				terminado = true;
 			} else {

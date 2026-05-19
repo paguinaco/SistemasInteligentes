@@ -19,7 +19,7 @@ public class InterfazAgent extends Agent {
 
     @Override
     protected void setup() {
-        System.out.println("💻 Agente de Interfaz [" + getLocalName() + "] arrancado.");
+        System.out.println("Agente de Interfaz [" + getLocalName() + "] arrancado.");
 
         SwingUtilities.invokeLater(() -> construirInterfaz());
 
@@ -69,7 +69,7 @@ public class InterfazAgent extends Agent {
             public void actionPerformed(ActionEvent e) {
                 String producto = inputProducto.getText().trim();
                 if (!producto.isEmpty()) {
-                    pantallaResultados.append("🚀 Solicitando buscar: " + producto + "...\n");
+                    pantallaResultados.append("Solicitando buscar: " + producto + "...\n");
                     
                     addBehaviour(new OneShotBehaviour() {
                         @Override
